@@ -13,18 +13,12 @@ public class Main {
 
 		System.out.println("---------------------------- Monopoly v1 -----------------------------");
 
-		ArrayList<Case> c = new ArrayList<Case>();
-		c = p.getCases();
-		for (int i = 0; i < c.size(); i++) {
-			System.out.println(c.get(i).getNom());
-		}
-
 		while(menu) { // boucle du menu
 			System.out.println("Nombre de joueur ? ");
 			Scanner sc = new Scanner(System.in);
 			try {		
 				int nbjoueur = sc.nextInt();
-				if (nbjoueur > 0 && nbjoueur<9) {
+				if (nbjoueur > 1 && nbjoueur<9) {
 					menu = false; // on peut sortir du menu
 
 					for (int i = 0; i < nbjoueur ; i++) { // création des joueurs
@@ -38,9 +32,9 @@ public class Main {
 			} 
 
 			catch (NombreJoueurException e) {
-				System.out.println("Veuillez rentrer un chiffre entre 1 et 8 compris");
+				System.out.println("Veuillez rentrer un chiffre entre 2 et 8 compris");
 				System.out.println("Réessayer ? (O/N) ");
-				if((new Scanner(System.in).next()).toLowerCase().charAt(0) == 'n') {
+				if((sc.next()).toLowerCase().charAt(0) == 'n') {
 					menu = false;
 				}
 			}

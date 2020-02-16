@@ -2,6 +2,7 @@
 public enum Couleur {
 
 	Rouge,
+	Bleu, 
 	Vert, 
 	Violet, 
 	Cyan, 

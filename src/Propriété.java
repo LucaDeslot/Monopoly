@@ -5,7 +5,7 @@ public class Propriété extends Carte {
 	private boolean hotel;
 	private Couleur couleur;
  
-	public Propriété(String nom, int prix, int prixHypotheque, int maison, boolean hotel, Couleur couleur) {
+	public Propriété(String nom, int prix,  Couleur couleur, int prixHypotheque) {
 		super(nom, prix, prixHypotheque);
 		this.maison = maison; 
 		this.hotel = hotel; 
