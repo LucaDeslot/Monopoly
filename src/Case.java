@@ -2,11 +2,13 @@
 public class Case {
 
 	private String nom;
-	private TypeCase type;
+	private int posX;
+	private int posY; 
 	
-	public Case(String nom, TypeCase type) {
+	public Case(String nom, int x, int y) {
 		this.nom = nom; 
-		this.type = type;
+		posX = x; 
+		posY = y;
 	}
 
 	public String getNom() {
