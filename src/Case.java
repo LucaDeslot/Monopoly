@@ -18,13 +18,5 @@ public class Case {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
-	public TypeCase getType() {
-		return type;
-	}
-
-	public void setType(TypeCase type) {
-		this.type = type;
-	}
 	
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import com.exceptions.NombreJoueurException;
@@ -7,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception, NombreJoueurException {
 
-		Plateau p = new Plateau();
+		Jeu p = new Jeu();
 		boolean menu = true;
 		// TODO Auto-generated method stub
 

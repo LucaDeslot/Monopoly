@@ -23,8 +23,8 @@ public class Jeu {
 		for (int i = 0; i < 40; i++) {
 
 			if(i == 7 || i == 22 || i == 33) {
-				int x; 
-				int y;
+				int x = 0;
+				int y = 0;
 				switch (i) {
 				case 7:
 					x = 0;
@@ -40,8 +40,8 @@ public class Jeu {
 				}
 				cases.add(new Case("Chance", x, y)); 	
 			} else if (i == 2 || i == 17 || i == 36) {
-				int x; 
-				int y;
+				int x = 0;
+				int y = 0;
 				
 				switch (i) {
 				case 2:
@@ -110,6 +110,7 @@ public class Jeu {
 					
 					cases.add(new Service(nom, x, y, prix));
 					cartes.add(new Carte(nom, prix,(prix/2)));
+					br.readLine();
 				} else {
 					Couleur c = Couleur.valueOf(br.readLine());
 					cases.add(new Constructible(nom, x, y, c, prix));
@@ -135,7 +136,7 @@ public class Jeu {
 		System.out.println("Après tirage au sort "+joueurs.get(joueurcourant).getNom()+" va commencer");
 		boolean finPartie = false;
 		while (!finPartie) {
-			joueurs.ge
+			//joueurs.ge
 		}
 	}
 	
