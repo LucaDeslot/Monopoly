@@ -6,11 +6,25 @@ public class Joueur {
 	private int argent;
 	private ArrayList<Carte> cartes; 
 	private int postion;
+	private boolean sortieprison;
 	
 	public Joueur(String nom) {
 		this.nom = nom;
-		this.argent = 1500;
+		this.argent = 100000;
 		this.postion = 0;
+		sortieprison = false;
+	}
+
+	public void addArgent(int somme) {
+		argent = argent + somme;
+	}
+
+	public void avancer (int val) {
+		postion = postion + val;
+	}
+
+	public void addArgentMaisonHotel(int prixmaison, int prixhotel){
+
 	}
 
 	public String getNom() {
@@ -41,8 +55,12 @@ public class Joueur {
 		return postion;
 	}
 
-	public void setPostion(int postion) {
-		this.postion = postion;
+	public void setPostion(int x) {
+		this.postion = x;
 	}
+
+
+
+	public void setSortieprison(boolean value){ this.sortieprison = value; }
  
 }
